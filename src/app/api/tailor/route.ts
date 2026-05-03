@@ -38,7 +38,7 @@ export async function POST(request: Request) {
 
     // Call Gemini API using the new @google/genai SDK
     const response = await ai.models.generateContent({
-        model: 'gemini-1.5-flash',
+        model: 'gemini-1.5-flash-latest',
         contents: [
             prompt,
             {
