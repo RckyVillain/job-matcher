@@ -13,7 +13,7 @@
   "dependencies": {
     "@google/genai": "^0.1.1",
     "firebase": "^11.0.2",
-    "next": "15.0.3",
+    "next": "^15.0.7",
     "pdf-parse": "^1.1.1",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
@@ -27,7 +27,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "15.0.3",
+    "eslint-config-next": "^15.0.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "ts-node": "^10.9.2",
