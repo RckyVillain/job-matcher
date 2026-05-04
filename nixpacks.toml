@@ -1,0 +1,5 @@
+[phases.setup]
+cmds = [
+    "apt-get update -y",
+    "apt-get install -y libatomic1"
+]

@@ -36,10 +36,11 @@ export const authOptions: NextAuthOptions = {
         strategy: "jwt",
     },
     secret: process.env.NEXTAUTH_SECRET || "fallback_secret_key_for_development",
+    trustHost: true,
     pages: {
         signIn: '/login',
     }
-});
+};
 
 const handler = NextAuth(authOptions);
 
