@@ -1,5 +1,1 @@
-[phases.setup]
-cmds = [
-    "apt-get update -y",
-    "apt-get install -y libatomic1"
-]
+# Removed to prevent conflicts with Nixpacks default mise setup
