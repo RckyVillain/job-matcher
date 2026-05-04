@@ -3,7 +3,9 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { sql } from "@/lib/neon/db";
 import bcrypt from "bcryptjs";
 
-const handler = NextAuth({
+import { NextAuthOptions } from "next-auth";
+
+export const authOptions: NextAuthOptions = {
     providers: [
         CredentialsProvider({
             name: "Credentials",
@@ -38,5 +40,7 @@ const handler = NextAuth({
         signIn: '/login',
     }
 });
+
+const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
